@@ -50,14 +50,13 @@ p {
   margin-bottom: 1rem;
 }
 aside {
-  max-width: 840px;
+  max-width: 400px;
   margin: 20px auto;
   border: 1px solid #333;
   padding: 10px;
   background-color: white;
   color: #333;
 }
-
 aside img {
   display: block;
   margin: 10px auto;
