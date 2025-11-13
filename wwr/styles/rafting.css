@@ -15,7 +15,7 @@
 
 body {
   font-family: var(--body-font);
-  color: #222222;
+  color: var(--accent1-color);
   background-color: #ffffff;
 }
 
@@ -103,6 +103,7 @@ section h2 {
   background-color: var(--primary-color);
   padding: 10px;
   text-align: center;
+  color: var(--accent2-color);
 }
 
 section p {
