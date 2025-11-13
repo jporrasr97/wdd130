@@ -1,5 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 main {
     margin: 20px;
+   
 }
 
 aside {
@@ -11,6 +18,11 @@ aside {
     color: #333;
 }
 
+aside h2{
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
 
 nav {
     background-color: darkblue;
@@ -32,9 +44,19 @@ main img {
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float:right;
 }
 
 p {
     padding: 0;
 }
 
+/* Class Selectors */
+
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #333;
+  background-color: whitesmoke;  
+  color: black;             
+}
