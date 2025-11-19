@@ -27,15 +27,42 @@ nav a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff; 
+  color: #fff;
 }
+
+header,
+.grid,
+footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+}
+
 main {
-  margin: 20px auto;
+  grid-column: 2 / 3;
+  margin: 1rem;
+}
+
+aside {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid #333;
+  padding: 10px;
+  background-color: white;
+  color: #333;
 }
 
 h1 {
   color: darkblue;
   margin: 20px 0 10px;
+  border-bottom: 1px solid #ccc;
 }
 
 main img {
@@ -51,20 +78,12 @@ main img {
 p {
   margin-bottom: 1rem;
 }
-aside {
-  max-width: 400px;
-  margin: 20px auto;
-  border: 1px solid #333;
-  padding: 10px;
-  background-color: white;
-  color: #333;
-}
+
 aside img {
   display: block;
   margin: 10px auto;
 }
 
-/* Class Selectors */
 .box {
   margin: 1rem 0;
   padding: 1rem;
@@ -81,26 +100,4 @@ footer {
   margin: 20px auto;
   text-align: center;
   font-size: 0.9rem;
-}
-
-header, footer {
-  max-width: 840px;
-  margin: 0 auto;
-}
-
-.grid {
-  display: grid;
-  align-items: center;
-}
-    
-main {
-  grid-column: 2/3;
-  margin: 1rem;
-}
-    
-aside {
-  width: 20rem;
-  position: relative;
-  grid-column: 1/2;
-  grid-row: 1/2;
 }
