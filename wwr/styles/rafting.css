@@ -26,38 +26,54 @@ footer {
   margin: 0 auto;
 }
 
-h1,h2 {
+h1,
+h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
 nav,
-p,section,article {
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
 
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 24px;
-  padding-top: 16px;
+  column-gap: 24px;
+  padding: 16px;
+  margin-top: 16px;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
 }
 
 .logo {
   height: 80px;
 }
 
+header nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
 header nav a {
-  display: block;
-  margin-bottom: 4px;
   text-decoration: none;
   color: var(--primary-color);
   font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 4px;
 }
 
 header nav a:hover {
-  text-decoration: underline;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
 }
 
 .hero {
@@ -106,9 +122,62 @@ section h2 {
   color: var(--accent2-color);
 }
 
-section p {
+.history {
+  margin-top: 32px;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 16px;
+  align-items: center;
   background-color: var(--secondary-color);
+  padding: 16px;
+}
+
+.history-content p {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
   color: #000000;
+}
+
+.history-content img {
+  max-width: 220px;
+  height: auto;
+  border-radius: 4px;
+  justify-self: center;
+}
+
+.adventures {
+  margin-top: 32px;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  background-color: var(--secondary-color);
+  padding: 16px;
+}
+
+.adventure-gallery figure {
+  flex: 1;
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.adventure-gallery figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent1-color);
 }
 
 footer {
@@ -116,12 +185,18 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-top: 24px;
-  padding-bottom: 24px;
+  padding: 16px 0 24px;
 }
 
 footer p {
   margin: 0;
   padding: 0;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
 }
 
 .socialmedia a {
@@ -131,5 +206,4 @@ footer p {
 .socialmedia img {
   width: 32px;
   height: 32px;
-  margin-left: 8px;
 }
