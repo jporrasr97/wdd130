@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #d8cbf7;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #777;
+    margin-bottom: 20px;
+}
+
+.logo-box {
+    padding: 10px;
+}
+
+.logo {
+    height: 60px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin-left: -1px;
+}
+
+header nav a:hover {
+    background-color: #eee;
+}
+
+.contact-main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.company-header {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.company-header h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.company-header p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.map-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.google-map {
+    width: 100%;
+    height: 400px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+.google-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contact-form .form-label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contact-form input[type="text"], 
+.contact-form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #777;
+}
+
+.radio-group {
+    margin-top: 10px;
+}
+
+.radio-option {
+    margin-bottom: 5px;
+}
+
+.radio-option label {
+    display: inline;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #777;
+}
+
+.newsletter-checkbox {
+    margin-top: 15px;
+}
+
+.newsletter-checkbox label {
+    font-weight: bold;
+    font-size: 14px;
+    display: inline;
+    margin-left: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #e0e0e0;
+    border: 1px solid #777;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ccc;
+}
+
+.employee-profiles {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #777;
+    text-align: center;
+}
+
+.employee-profiles h2 {
+    margin-bottom: 30px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.profile-grid figure {
+    margin: 0;
+    text-align: center;
+}
+
+.profile-grid img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #d8cbf7;
+    padding: 20px 40px;
+    border: 1px solid #777;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px;
+    margin-left: 5px;
+}
